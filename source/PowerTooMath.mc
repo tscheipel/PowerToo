@@ -56,8 +56,8 @@ class PowerTooMath {
                 calculatedPower = averagePower30Seconds;
                 break;
             default:
-                var previousFraction = (normalizedPowerCounter - 1.0) / normalizedPowerCounter;
-                var currentFraction = 1.0 / normalizedPowerCounter;
+                var previousFraction = normalizedPowerCounter / (normalizedPowerCounter + 1.0);
+                var currentFraction = 1.0 / (normalizedPowerCounter + 1.0);
                 calculatedPower = Math.pow(previousNormalizedPower, 4) * previousFraction + Math.pow(averagePower30Seconds, 4) * currentFraction;
                 calculatedPower = Math.pow(calculatedPower, 0.25);
         }
