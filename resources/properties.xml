@@ -1,0 +1,130 @@
+<resources>
+
+    <properties>
+		<!-- Updated date : 2024-02-28 -->
+        <property id="appVersion" type="string">2.0.0</property>
+        <property id="powerMode" type="number">0</property>
+        <property id="showPowerZoneBar" type ="boolean">true</property>
+        <property id="powerZoneBarHeight" type ="number">4</property>
+        <property id="powerZoneIndexHeight" type ="number">4</property>
+        <property id="showPowerZoneHistory" type ="boolean">false</property>
+        <property id="drawLabels" type ="boolean">false</property>
+        <property id="drawCurrentZone" type ="boolean">false</property>
+        <property id="calcPowerZone" type ="boolean">false</property>
+        <property id="calcTypePZ" type="number">0</property>
+        <property id="FTP" type="number">200</property>
+        <property id="manualPowerZone" type ="boolean">true</property>
+        <property id="Zone1maxValue" type ="number">137</property>
+        <property id="Zone2maxValue" type ="number">187</property>
+        <property id="Zone3maxValue" type ="number">224</property>
+        <property id="Zone4maxValue" type ="number">262</property>
+        <property id="Zone5maxValue" type ="number">299</property>
+        <property id="Zone6maxValue" type ="number">374</property>
+        <property id="averageSec" type="number">3</property>
+        <property id="averageMode" type="number">2</property>
+        <property id="fontSize" type="number">0</property>
+        <property id="threshold" type="number">5</property>
+        <property id="personalPower" type="number">150</property>    
+    </properties>
+
+    <settings>
+        <setting propertyKey="@Properties.appVersion" title="@Strings.AppVersionTitle">
+        	<settingConfig type="alphaNumeric" readonly="true" />
+    	</setting>
+    		
+		<setting propertyKey="@Properties.showPowerZoneBar" title="@Strings.PowerZoneBar_title">
+			<settingConfig type="boolean" />
+		</setting>
+        
+        <setting propertyKey="@Properties.powerZoneBarHeight" title="@Strings.PowerZoneBarHeight_title">
+            <settingConfig type="numeric" min="0" max="15" />
+        </setting>
+        <setting propertyKey="@Properties.powerZoneIndexHeight" title="@Strings.PowerZoneIndexHeight_title">
+            <settingConfig type="numeric" min="0" max="15" />
+        </setting>
+
+		<setting propertyKey="@Properties.showPowerZoneHistory" title="@Strings.PowerZoneHistory_title">
+			<settingConfig type="boolean" />
+		</setting>
+
+		<setting propertyKey="@Properties.drawLabels" title="@Strings.drawLabels_title">
+			<settingConfig type="boolean" />
+		</setting>
+
+		<setting propertyKey="@Properties.drawCurrentZone" title="@Strings.drawCurrentZone_title">
+			<settingConfig type="boolean" />
+		</setting>
+
+		<setting propertyKey="@Properties.calcPowerZone" title="@Strings.calcPowerZone_title">
+			<settingConfig type="boolean" />
+		</setting>
+
+        <setting propertyKey="@Properties.calcTypePZ" title="@Strings.calcTypePZ_title">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.DefaultPZ</listEntry>
+                <listEntry value="1">@Strings.StagesPZ</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.FTP" title="@Strings.FTP_title">
+            <settingConfig type="numeric" min="40" max="4000" />
+        </setting>
+		
+		<setting propertyKey="@Properties.manualPowerZone" title="@Strings.manualPowerZone_title">
+			<settingConfig type="boolean" />
+		</setting>
+
+        <setting propertyKey="@Properties.Zone1maxValue" title="@Strings.Zone1maxValue_title">
+            <settingConfig type="numeric" min="40" max="4000" />
+        </setting>
+		
+        <setting propertyKey="@Properties.Zone2maxValue" title="@Strings.Zone2maxValue_title">
+            <settingConfig type="numeric" min="40" max="4000" />
+        </setting>
+		
+        <setting propertyKey="@Properties.Zone3maxValue" title="@Strings.Zone3maxValue_title">
+            <settingConfig type="numeric" min="40" max="4000" />
+        </setting>
+		
+        <setting propertyKey="@Properties.Zone4maxValue" title="@Strings.Zone4maxValue_title">
+            <settingConfig type="numeric" min="40" max="4000" />
+        </setting>
+		
+        <setting propertyKey="@Properties.Zone5maxValue" title="@Strings.Zone5maxValue_title">
+            <settingConfig type="numeric" min="40" max="4000" />
+        </setting>
+		
+        <setting propertyKey="@Properties.Zone6maxValue" title="@Strings.Zone6maxValue_title">
+            <settingConfig type="numeric" min="40" max="4000" />
+        </setting>
+		
+        <setting propertyKey="@Properties.averageSec" title="@Strings.averageSec">
+            <settingConfig type="list">
+                <listEntry value="1">@Strings.modeNone</listEntry>
+                <listEntry value="3">@Strings.mode3s</listEntry>
+                <listEntry value="10">@Strings.mode10s</listEntry>
+                <listEntry value="30">@Strings.mode30s</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.averageMode" title="@Strings.averageMode">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.modeAvg_title</listEntry>
+                <listEntry value="1">@Strings.modeMax_title</listEntry>
+                <listEntry value="2">@Strings.modeNP_title</listEntry>
+                <listEntry value="3">@Strings.modeLap_title</listEntry>
+                <listEntry value="4">@Strings.modeAvgMax_title</listEntry>
+                <listEntry value="5">@Strings.modeAvgNP_title</listEntry>
+                <listEntry value="6">@Strings.modeLapNP_title</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.fontSize" title="@Strings.fontSize">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.modeSmall</listEntry>
+                <listEntry value="1">@Strings.modeLarge</listEntry>
+            </settingConfig>
+        </setting>
+        
+    </settings>
+</resources>
